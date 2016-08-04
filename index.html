@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>portfolio</title>
+  <link rel="stylesheet"  href="icomoon/style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+ 
+  <div class="nav">
+
+  	<div class="logo">
+  		<a href="#"><img src="images/logo_black.png"></a>	
+  	</div> <!--logo-->
+		
+
+		<div class="sign-in">
+			<a href="#">SIGN IN</a>
+		</div> <!--sin-in-->
+		
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+
+
+  
+    <!--********** end of nav *********** -->
+
+
+
+  <div class="intro-container">
+
+    <div class="our-mission">
+      <h1><i class="icon-star"></i>Our Mission<i class="icon-star"></i></h1> 
+      <p>Lorem Ipsum is simply dummy text of the printing and typesettin .lorem ipsum</p>
+      <p>has been the industry's standars dummy text ever since the 1500.</p>
+    </div> <!-- our-mission -->
+    
+  </div> <!--intro-container-->
+
+
+  <!--********* end of intro ***********-->
+
+  <div class="about-container"> 
+      <h1>About</h1>
+      <p>lorem ipsum is simply dummy text of the printing and typesetting industry..lorem ipsum</p>
+      <p>has been the industry's standard dummy text over since the 1500s, when an unknown</p>
+  </div> <!--about-container-->
+
+
+  <!--********** end of about *************-->
+
+
+  <div class="team">
+    <div class="wrap">
+      
+      <h2>Team</h2>
+
+      <div class="sqcontainer">
+        <div class="sq">
+          <img src="images/Ellipse 4.png">
+        </div> <!--sq-->
+        <h1>John Doe</h1>
+        <p> Founder & CEO</p>
+      </div> <!--sqcontainer-->
+
+
+       <div class="sqcontainer">
+        <div class="sq">
+          <img src="images/Layer 80.png">
+        </div> <!--sq-->
+        <h1>John Doe</h1>
+        <p> Co - Founder</p>
+      </div> <!--sqcontainer-->
+
+       <div class="sqcontainer">
+        <div class="sq">
+          <img src="images/Layer 81.png">
+        </div> <!--sq-->
+        <h1>John Doe</h1>
+        <p> Investor </p>
+      </div> <!--sqcontainer-->
+
+      <div class="work">
+        <p><a href="#"> WORK WITH US </a></p>
+      </div> <!-- work -->
+
+    </div><!-- WRAP -->
+
+
+  </div><!--team-->
+
+
+  <!--******** end of team *********-->
+
+
+
+  <div id="map-canvas">
+   
+  </div> <!--maps-->
+
+  
+
+  <!--********** end of maps ***********-->
+
+
+
+  <div class="footer">
+      <div class="wrap">
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">WORK WITH US</a></li>
+        </ul>
+
+        <div class="icondiv">
+          <i class="icon-twitter"></i>
+        </div> <!-- icondiv -->
+
+        <div class="icondiv">
+          <i class="icon-envelope-o"></i>
+        </div> <!-- icondiv -->
+
+        <div class="icondiv">
+          <i class="icon-facebook"></i>
+        </div> <!-- icondiv -->  
+
+        <div class="border">
+          
+        </div> <!--border-->
+
+        <div class="bottom">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">@copy Company.LLC 2014</a></li>
+          </ul>
+        </div><!--bottom-->
+
+
+      </div> <!--wrap-->
+  </div> <!--footer-->
+
+
+    <!--******* end of footer ********-->
+
+
+
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>	
+</body>
+</html>
